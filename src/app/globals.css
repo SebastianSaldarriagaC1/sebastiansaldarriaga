@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --general-background-color: #ffffff;
+  --main-background-color: #f0f0f6;
+  --primary-text-color: #2b2b2b;
+  --secondary-text-color: #767676;
+  --available-color: #7eb942;
+  --unavailable-color: #ff4d4f;
+  --highlight-color: #ffb400;
+}
+
+/* Clases para colores de fondo */
+.bg-general {
+  background-color: var(--general-background-color);
+}
+
+.bg-main {
+  background-color: var(--main-background-color);
+}
+
+.bg-highlight {
+  background-color: var(--highlight-color);
+}
+
+/* Clases para colores de borde */
+.border-highlight {
+  border-color: var(--highlight-color);
+}
+
+/* Clases para colores de texto */
+.text-primary {
+  color: var(--primary-text-color);
+}
+
+.text-secondary {
+  color: var(--secondary-text-color);
+}
+
+.text-available {
+  color: var(--available-color);
+}
+
+.text-unavailable {
+  color: var(--unavailable-color);
+}
+
+.text-highlight {
+  color: var(--highlight-color);
+}
+
+.date-label {
+  color: var(--general-background-color);
+  background-color: var(--highlight-color);
+  font-size: 0.625rem;
+}
