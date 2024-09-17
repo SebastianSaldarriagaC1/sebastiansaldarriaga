@@ -18,7 +18,7 @@ const LeftColumn: React.FC = () => {
       <hr className={`${relativeWidth} border-t border-gray-300 mx-auto`} />
 
       <PersonalInfo
-        age="21"
+        age="22"
         residence="CO"
         freelance={true}
         address="Medellín, Colombia"
@@ -44,7 +44,6 @@ const LeftColumn: React.FC = () => {
         skills={[
           { name: "Java", percentage: 80 },
           { name: "JavaScript", percentage: 60 },
-          { name: "Python", percentage: 40 },
           { name: "Kotlin", percentage: 40 },
         ]}
         className={`${relativeWidth} mx-auto`}

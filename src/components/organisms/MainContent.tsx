@@ -47,14 +47,14 @@ const MainContent: React.FC = () => {
               iconViewBox: "0 0 128 128",
             },
             {
-              title: "Quality Asurance (WIP)",
-              description: "Jest, JUnit, Mockito, SonarCloud",
+              title: "Quality Asurance",
+              description: "SonarCloud, JUnit, Postman",
               icon: "M33.914 413.612h149.55v27.595H27.494c-26.348 0-34.136-13.194-21.729-34.31L137.91 187.753V61.975h-26.075c-19.504 0-19.504-27.595 0-27.595h189.93c19.505 0 19.505 27.595 0 27.595H275.69v132.828h-27.963V61.975h-81.854v132.828zm135.6-169.187L84.692 386.574h70.601l104.375-112.907l-15.582-29.242zm145.996 9.783L209.5 367.506l106.01 110.286l33.538-33.538l-80.65-76.748l80.65-79.76zm56.943 33.537l80.65 79.76l-80.65 76.75l33.538 33.537L512 367.506L405.99 254.208z",
               iconViewBox: "0 0 512 512",
             },
             {
-              title: "Deployment (WIP)",
-              description: "Docker, GitHub Actions, AWS, Vercel",
+              title: "Deployment and Cloud Services",
+              description: "Docker, GitHub Actions, Google Cloud, Vercel",
               icon: "M24.01 20.027v2h-24v-2h4v-1a2.006 2.006 0 0 1-2-2v-10a2.006 2.006 0 0 1 2-2h1.996v2H4.01v10h16v-10h-2.004v-2h2.004a2.006 2.006 0 0 1 2 2l-.01 10a1.997 1.997 0 0 1-1.99 2v1Zm-9-6.012l-3-3l-3 3h2v2.01h2v-2.01Zm.995-7.991a4 4 0 1 1-4-4a4.001 4.001 0 0 1 4 4m-4.4 2.96v-.56a.802.802 0 0 1-.8-.8v-.4L9.06 5.479a2.958 2.958 0 0 0 2.545 3.505m2.658-1.007a2.977 2.977 0 0 0-1.068-4.704a.797.797 0 0 1-.79.75h-.8v.8a.401.401 0 0 1-.4.4h-.8v.8h2.4a.401.401 0 0 1 .4.4v1.2h.4a.787.787 0 0 1 .658.354",
               iconViewBox: "0 0 24 24",
             },
@@ -89,6 +89,13 @@ const MainContent: React.FC = () => {
           description="My Portfolio showcases a selection of my projects. Dive into this collection to explore my diverse range of endeavors, from innovative software solutions to impactful projects in areas like predictive modeling, web development, and more."
           projects={[
             {
+              title: "SprintPulse (WIP)",
+              description:
+                "Scrum-focused project management platform with gamified features. Primarily responsible for backend development (APIs and database), as well as creating necessary diagrams and initial front-end mockups. May also contribute to front-end development.",
+              image: "/scrum-progress.png",
+              link: "https://github.com/SebastianSaldarriagaC1/sprint-pulse",
+            },
+            {
               title: "Backend for SSMU Application",
               description:
                 "Backend for the module to request rides in the SSMU application, similar to Uber. Responsible for database management and building APIs.",
@@ -96,32 +103,18 @@ const MainContent: React.FC = () => {
               link: "https://github.com/SebastianSaldarriagaC1/realizar-solicitudes-back",
             },
             {
-              title: "Predictive Model for FIFA19 Players",
-              description:
-                "Predictive model built in Python to predict the value of soccer players in FIFA19 based on their characteristics. Responsible for data preprocessing and testing different predictive models with SKlearn to determine the most efficient and complex model.",
-              image: "/predictive-model-fifa19.jpeg",
-              link: "https://github.com/SebastianSaldarriagaC1/proyecto-final-modelos",
-            },
-            {
-              title: "Form with Jetpack Compose",
-              description:
-                "Initial exploration of Jetpack Compose with Android. Practiced concepts such as navigation, ViewModel application, and development of reusable composables.",
-              image: "/jetpack-compose-form.jpeg",
-              link: "https://github.com/Compu-Movil-20241-Gr09/LabsCM20241-Gr09",
-            },
-            {
-              title: "SITAS - Airline Ticketing Systems (WIP)",
+              title: "SITAS - Airline Ticketing Systems",
               description:
                 "SITAS is a web application aimed at providing users with an efficient experience for managing airline tickets. Role focused on the Reservations module, including quality assurance (best practices, requirements refinement, testing, etc.), as well as part of front-end development and deployment.",
               image: "/sitas-reservas-a.png",
               link: "https://github.com/CodeFactory2024-1/frontend-presencial/tree/reservas-A",
             },
             {
-              title: "Scrum Progress (WIP)",
+              title: "Predictive Model for FIFA19 Players",
               description:
-                "Scrum-focused project management platform with gamified features. Primarily responsible for backend development (APIs and database), as well as creating necessary diagrams and initial front-end mockups. May also contribute to front-end development.",
-              image: "/scrum-progress.png",
-              link: "https://github.com/PI2-ScrumProgress",
+                "Predictive model built in Python to predict the value of soccer players in FIFA19 based on their characteristics. Responsible for data preprocessing and testing different predictive models with SKlearn to determine the most efficient and complex model.",
+              image: "/predictive-model-fifa19.jpeg",
+              link: "https://github.com/SebastianSaldarriagaC1/proyecto-final-modelos",
             },
           ]}
         />
