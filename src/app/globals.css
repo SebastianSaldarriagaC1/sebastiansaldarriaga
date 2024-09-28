@@ -3,56 +3,68 @@
 @tailwind utilities;
 
 :root {
-  --general-background-color: #ffffff;
-  --main-background-color: #f0f0f6;
-  --primary-text-color: #2b2b2b;
-  --secondary-text-color: #767676;
-  --available-color: #7eb942;
-  --unavailable-color: #ff4d4f;
-  --highlight-color: #ffb400;
+  --main-background-color: #ffffff;
+  --main-text-color: #212121;
+  --secondary-text-color: #616161;
+  --primary-accent-color: #5c6bc0;
+  --secondary-accent-color: #ab47bc;
+  --division-color: #e0e0e0;
+  --shadows-color: rgba(0, 0, 0, 0.1);
+  --primary-accent-hover-color: #3f51b5;
+  --secondary-accent-hover-color: #8e24aa;
 }
 
-/* Clases para colores de fondo */
-.bg-general {
-  background-color: var(--general-background-color);
-}
-
-.bg-main {
+body {
   background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-family: "Source Sans Pro", "Arial", "Sans Serif";
 }
 
-.bg-highlight {
-  background-color: var(--highlight-color);
+.section-text {
+  color: var(--main-text-color);
+  font-family: "Montserrat", "Arial", "Sans Serif";
+  font-size: 40px;
+  font-weight: 500;
 }
 
-/* Clases para colores de borde */
-.border-highlight {
-  border-color: var(--highlight-color);
+.navbar-text {
+  color: var(--main-text-color);
+  font-family: "Montserrat", "Arial", "Sans Serif";
+  font-size: 20px;
 }
 
-/* Clases para colores de texto */
-.text-primary {
-  color: var(--primary-text-color);
+.header-text {
+  color: var(--main-text-color);
+  font-family: "Source Sans Pro", "Arial", "Sans Serif";
+  font-size: 48px;
 }
 
-.text-secondary {
+.highlight-text {
+  color: var(--primary-accent-color);
+  font-family: "Source Sans Pro", "Arial", "Sans Serif";
+  font-size: 48px;
+}
+
+p {
   color: var(--secondary-text-color);
+  font-family: "Source Sans Pro", "Arial", "Sans Serif";
+  font-size: 16px;
 }
 
-.text-available {
-  color: var(--available-color);
+hr {
+  border: 1px solid var(--division-color);
 }
 
-.text-unavailable {
-  color: var(--unavailable-color);
-}
-
-.text-highlight {
-  color: var(--highlight-color);
-}
-
-.date-label {
-  color: var(--general-background-color);
-  background-color: var(--highlight-color);
-  font-size: 0.625rem;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-background-color: #121212;
+    --main-text-color: #ffffff;
+    --secondary-text-color: #bdbdbd;
+    --primary-accent-color: #5c6bc0;
+    --secondary-accent-color: #ab47bc;
+    --division-color: #424242;
+    --shadows-color: rgba(255, 255, 255, 0.1);
+    --primary-accent-hover-color: #7986cb;
+    --secondary-accent-hover-color: #d05ce3;
+  }
 }
