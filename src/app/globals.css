@@ -36,19 +36,15 @@ body {
 .header-text {
   color: var(--main-text-color);
   font-family: "Source Sans Pro", "Arial", "Sans Serif";
-  font-size: 48px;
 }
 
 .highlight-text {
   color: var(--primary-accent-color);
-  font-family: "Source Sans Pro", "Arial", "Sans Serif";
-  font-size: 48px;
 }
 
 p {
   color: var(--secondary-text-color);
   font-family: "Source Sans Pro", "Arial", "Sans Serif";
-  font-size: 16px;
 }
 
 hr {

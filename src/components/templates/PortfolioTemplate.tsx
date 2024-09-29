@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../molecules/Navbar";
+import AboutSection from "../organisms/AboutSection";
 
 const PortfolioTemplate: React.FC = () => {
   return (
@@ -14,11 +15,9 @@ const PortfolioTemplate: React.FC = () => {
           { text: "Contact", href: "#contact" },
         ]}
       />
-      <hr className="mx-auto w-11/12" />
-      <div className="mx-auto w-11/12 sm:w-10/12">
-        <h1 id="about-me">Portfolio</h1>
-        <p>Under construction</p>
-      </div>
+      <hr className="mx-auto w-11/12 mb-10" />
+      <AboutSection />
+      <hr className="mx-auto w-11/12 my-10" />
     </div>
   );
 };
