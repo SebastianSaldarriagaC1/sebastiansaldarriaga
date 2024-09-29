@@ -31,6 +31,7 @@ const HeaderText: React.FC<TextProps> = ({ id, text, extraClass }) => {
   );
 };
 
+// HighlightText component
 interface HighlightTextProps {
   text: string;
   highlight?: string;
@@ -56,5 +57,6 @@ const HighlightText: React.FC<HighlightTextProps> = ({
     );
   }
 };
+// End HighlightText component
 
 export { SectionText, Navbartext, HeaderText, HighlightText };

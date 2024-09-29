@@ -20,12 +20,13 @@ const AboutSection: React.FC = () => {
         </div>
         <div className="w-10/12 mx-auto items-center text-base sm:text-2xl">
           <p>
-            I'm a Systems Engineering student at the University of Antioquia,
-            with a strong passion for backend programming, and I'm in the
-            process of becoming a Fullstack Developer. I have experience working
-            with languages such as Java, JavaScript/TypeScript, and Kotlin, and
-            my love for technology constantly drives my enthusiasm to learn and
-            grow in this ever-evolving field.
+            I&apos;m a Systems Engineering student at the University of
+            Antioquia, with a strong passion for backend programming, and
+            I&apos;m in the process of becoming a Fullstack Developer. I have
+            experience working with languages such as Java,
+            JavaScript/TypeScript, and Kotlin, and my love for technology
+            constantly drives my enthusiasm to learn and grow in this
+            ever-evolving field.
           </p>
         </div>
       </div>
