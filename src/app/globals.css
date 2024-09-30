@@ -12,6 +12,7 @@
   --shadows-color: rgba(0, 0, 0, 0.1);
   --primary-accent-hover-color: #3f51b5;
   --secondary-accent-hover-color: #8e24aa;
+  --unactive-primary-accent-color: rgba(92, 107, 192, 0.4);
 }
 
 body {
@@ -40,6 +41,19 @@ body {
 
 .highlight-text {
   color: var(--primary-accent-color);
+}
+
+.project-text {
+  color: var(--unactive-primary-accent-color);
+  font-family: "Montserrat", "Arial", "Sans Serif";
+  font-size: 24px;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+/* Focused (active) style */
+.slick-current .project-text {
+  color: var(--primary-accent-color);
+  font-size: 32px;
 }
 
 p {

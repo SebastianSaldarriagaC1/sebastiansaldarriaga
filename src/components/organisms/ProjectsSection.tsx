@@ -47,6 +47,7 @@ const ProjectsSection: React.FC = () => {
     centerPadding: "60px",
     slidesToShow: 3,
     speed: 500,
+    arrows: false,
   };
 
   const lowerSliderSettings = {
@@ -57,6 +58,7 @@ const ProjectsSection: React.FC = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     waitForAnimate: false,
+    arrows: false,
   };
 
   const [nav1, setNav1] = useState<Slider | null>(null);
@@ -80,8 +82,8 @@ const ProjectsSection: React.FC = () => {
         className="my-10"
       >
         {projectList.map((project, index) => (
-          <div key={index} className="h-5 bg-cyan-700">
-            <h3 className="text-center">{project.title}</h3>
+          <div key={index}>
+            <h3 className="text-center project-text">{project.title}</h3>
           </div>
         ))}
       </Slider>
@@ -90,6 +92,7 @@ const ProjectsSection: React.FC = () => {
         ref={(slider) => {
           if (slider) sliderRef2.current = slider;
         }}
+        className="w-10/12 mx-auto items-center text-base sm:text-2xl"
         {...lowerSliderSettings}
       >
         {projectList.map((project, index) => (
