@@ -21,7 +21,9 @@ const CircleImage: React.FC<ImageProps> = ({ src, alt }) => {
 
 const ProjectImage: React.FC<ImageProps> = ({ src, alt }) => {
   return (
-    <Image src={src} alt={alt} width={500} height={300} layout="responsive" />
+    <div className="relative w-[100%] h-auto md:w-[450px] md:h-[300px] sm:w-[350px] sm:h-[233px]  overflow-hidden">
+      <Image src={src} alt={alt} width={450} height={300} />
+    </div>
   );
 };
 

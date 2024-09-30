@@ -79,7 +79,7 @@ const ProjectsSection: React.FC = () => {
           if (slider) sliderRef1.current = slider;
         }}
         {...upperSliderSettings}
-        className="my-10"
+        className="my-10 h-10"
       >
         {projectList.map((project, index) => (
           <div key={index}>
