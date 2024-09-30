@@ -23,20 +23,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div className="p-10 m-[1px] card-border">
       <div className="sm:flex items-center">
         <ProjectImage src={image} alt={title} />
-        <p className="ml-10">{description}</p>
+        <p className="sm:ml-10">{description}</p>
       </div>
-      <div className="flex w-full mt-10 justify-evenly">
-        {githubLink && (
-          <a
-            href={githubLink}
-            target="_blank"
-            rel="noreferrer"
-            className="flex"
-          >
-            <FaGithub className="mr-2" size={30} />
-            <p className="project-external-link-text text-3xl">GitHub</p>
-          </a>
-        )}
+      <div className="sm:flex w-full mt-10 justify-evenly">
         {websiteLink && (
           <a
             href={githubLink}
@@ -44,8 +33,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             rel="noreferrer"
             className="flex"
           >
-            <CgWebsite className="mr-2" size={30} />
-            <p className="project-external-link-text text-3xl">WebSite</p>
+            <CgWebsite className="mr-2 text-xl sm:text-3xl" />
+            <p className="project-external-link-text text-xl  sm:text-3xl">
+              Visit Webpage
+            </p>
+          </a>
+        )}
+        {githubLink && (
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noreferrer"
+            className="flex"
+          >
+            <FaGithub className="mr-2 text-xl sm:text-3xl" />
+            <p className="project-external-link-text text-xl sm:text-3xl">
+              Visit Repository
+            </p>
           </a>
         )}
       </div>
