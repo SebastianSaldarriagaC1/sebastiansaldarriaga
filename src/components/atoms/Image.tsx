@@ -19,4 +19,10 @@ const CircleImage: React.FC<ImageProps> = ({ src, alt }) => {
   );
 };
 
-export { CircleImage };
+const ProjectImage: React.FC<ImageProps> = ({ src, alt }) => {
+  return (
+    <Image src={src} alt={alt} width={500} height={300} layout="responsive" />
+  );
+};
+
+export { CircleImage, ProjectImage };
