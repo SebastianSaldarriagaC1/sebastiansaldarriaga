@@ -72,9 +72,9 @@ const ProjectsSection: React.FC = () => {
     setNav2(sliderRef2.current);
   }, []);
   return (
-    <div className="mx-auto w-11/12 sm:w-10/12">
+    <div id="projects" className="mx-auto w-11/12 sm:w-10/12">
       <div className="slider-container">
-        <SectionText id="projects" text="Projects" />
+        <SectionText text="Projects" />
         <Slider
           asNavFor={nav2 ?? undefined}
           ref={(slider) => {

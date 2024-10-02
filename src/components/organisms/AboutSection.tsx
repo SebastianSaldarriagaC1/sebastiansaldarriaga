@@ -4,7 +4,7 @@ import { CircleImage } from "../atoms/Image";
 
 const AboutSection: React.FC = () => {
   return (
-    <div className="mx-auto w-11/12 sm:w-10/12">
+    <div id="about-me" className="mx-auto w-11/12 sm:w-10/12">
       <div>
         <div className="w-full flex flex-col-reverse my-10 sm:flex-row sm:justify-between sm:items-center">
           <div className="mx-auto mt-10 sm:mt-0 sm:w-1/3">
@@ -14,7 +14,6 @@ const AboutSection: React.FC = () => {
             <HighlightText
               text="I’m Sebastian Saldarriaga, Systems Engineering Student"
               highlight="Sebastian Saldarriaga"
-              id="about-me"
             />
           </div>
         </div>
