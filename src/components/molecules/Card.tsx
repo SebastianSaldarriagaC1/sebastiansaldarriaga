@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { ParagraphText } from "../atoms/Text";
 import { IconType } from "react-icons";
+import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -73,4 +74,44 @@ const SkillCard: React.FC<SkillCardProps> = ({ name, icon }) => {
   );
 };
 
-export { ProjectCard, SkillCard };
+interface EducationCardProps {
+  institution: string;
+  institutionLogo: string;
+  degree: string;
+  city: string;
+  completionDate: string;
+  certificateLink?: string;
+}
+
+const EducationCard: React.FC<EducationCardProps> = ({
+  institution,
+  institutionLogo,
+  degree,
+  city,
+  completionDate,
+  certificateLink,
+}) => {
+  return (
+    <div className="flex flex-col sm:flex-row p-10 m-[1px] card-border card-hover transition-shadow w-full justify-between">
+      <div className="flex flex-col sm:flex-row">
+        <Image
+          src={institutionLogo}
+          alt="Institution logo"
+          width={105}
+          height={140}
+          className="sm:mr-10"
+        />
+        <div className="flex flex-col justify-center my-6">
+          <p>{institution}</p>
+          <ParagraphText text={degree} />
+        </div>
+      </div>
+      <div className="flex flex-col justify-center sm:text-end">
+        <p>{city}</p>
+        <ParagraphText text={completionDate} />
+      </div>
+    </div>
+  );
+};
+
+export { ProjectCard, SkillCard, EducationCard };

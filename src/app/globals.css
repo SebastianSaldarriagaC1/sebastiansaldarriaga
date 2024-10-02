@@ -87,12 +87,14 @@ hr {
 
 .active-category {
   color: var(--primary-accent-color);
+  font-size: 24px;
 }
 
 .unactive-category {
   color: var(--division-color);
   /* Line over the text */
   text-decoration: line-through;
+  font-size: 24px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -109,7 +111,7 @@ hr {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .project-text {
     font-size: 16px;
     transition: color 0.3s ease, font-size 0.3s ease;
@@ -118,5 +120,13 @@ hr {
   /* Focused (active) style */
   .slick-current .project-text {
     font-size: 24px;
+  }
+
+  .active-category {
+    font-size: 16px;
+  }
+
+  .unactive-category {
+    font-size: 16px;
   }
 }
