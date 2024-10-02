@@ -65,6 +65,7 @@ body {
   font-family: "Montserrat", "Arial", "Sans Serif";
   text-decoration: underline;
 }
+
 .rounded-button {
   background-color: var(--secondary-accent-color);
   cursor: pointer;
@@ -105,5 +106,17 @@ hr {
     --shadows-color: rgba(255, 255, 255, 0.1);
     --primary-accent-hover-color: #7986cb;
     --secondary-accent-hover-color: #d05ce3;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-text {
+    font-size: 16px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+  }
+
+  /* Focused (active) style */
+  .slick-current .project-text {
+    font-size: 24px;
   }
 }
