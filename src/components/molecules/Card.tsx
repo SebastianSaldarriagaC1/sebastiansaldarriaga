@@ -6,6 +6,7 @@ import { CgWebsite } from "react-icons/cg";
 import { ParagraphText } from "../atoms/Text";
 import { IconType } from "react-icons";
 import Image from "next/image";
+import { CiLink } from "react-icons/ci";
 
 interface ProjectCardProps {
   title: string;
@@ -103,7 +104,19 @@ const EducationCard: React.FC<EducationCardProps> = ({
         />
         <div className="flex flex-col justify-center my-6">
           <p>{institution}</p>
-          <ParagraphText text={degree} />
+          {certificateLink ? (
+            <a
+              href={certificateLink}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center"
+            >
+              <ParagraphText text={degree} extraClass="underline" />
+              <CiLink className="text-xl sm:text-2xl ml-1" />
+            </a>
+          ) : (
+            <ParagraphText text={degree} />
+          )}
         </div>
       </div>
       <div className="flex flex-col justify-center sm:text-end">
