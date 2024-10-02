@@ -39,7 +39,6 @@ const skillsList: Skill[] = [
   { name: "Docker", icon: SiDocker, category: ["DevOps"] },
   { name: "Git", icon: SiGit, category: ["DevOps"] },
   { name: "Linux", icon: SiLinux, category: ["DevOps"] },
-  { name: "HTML", icon: SiJavascript, category: ["Tu mama"] },
 ];
 
 const categories = Array.from(
@@ -47,7 +46,8 @@ const categories = Array.from(
 );
 
 const SkillsSection: React.FC = () => {
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [selectedCategories, setSelectedCategories] =
+    useState<string[]>(categories);
 
   const toggleCategory = (category: string) => {
     setSelectedCategories(
@@ -67,10 +67,11 @@ const SkillsSection: React.FC = () => {
         );
 
   return (
-    <div id="skills" className="mx-auto w-11/12 sm:w-10/12 sm:h-[400px]">
+    <div id="skills" className="mx-auto w-11/12 sm:w-10/12">
       <SectionText text="Skills & Tools" />
-      <div className="flex flex-col sm:flex-row w-10/12 mx-auto items-start sm:items-center text-base sm:text-xl">
-        <div className="flex flex-col w-full sm:w-1/2 h-auto">
+      <div className="flex flex-col sm:flex-row w-10/12 mx-auto items-start sm:items-center min-h-96">
+        <hr className="sm:rotate-90 visible sm:hidden w-10/12 sm:w-0 mx-auto my-5" />
+        <div className="flex flex-col w-full sm:w-5/12">
           {categories.map((category, index) => (
             <button
               key={index}
@@ -85,8 +86,8 @@ const SkillsSection: React.FC = () => {
             </button>
           ))}
         </div>
-        <div className="border-gray-50 h-1/2 w-1"></div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 w-full sm:w-1/2 mt-10 sm:mt-0">
+        <hr className="sm:rotate-90 w-10/12 sm:w-2/12 mx-auto my-5" />
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 w-full sm:w-5/12 mt-10 sm:mt-0">
           {filteredSkills.map((skill, index) => {
             return (
               <SkillCard key={index} name={skill.name} icon={skill.icon} />

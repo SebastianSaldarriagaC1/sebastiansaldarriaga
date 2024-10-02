@@ -88,6 +88,12 @@ hr {
   color: var(--primary-accent-color);
 }
 
+.unactive-category {
+  color: var(--division-color);
+  /* Line over the text */
+  text-decoration: line-through;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --main-background-color: #121212;
