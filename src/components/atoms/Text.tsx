@@ -19,6 +19,14 @@ const SectionText: React.FC<TextProps> = ({ id, text, extraClass }) => {
   );
 };
 
+const SubsectionText: React.FC<TextProps> = ({ id, text, extraClass }) => {
+  return (
+    <h2 id={id} className={"subsection-text " + extraClass}>
+      {text}
+    </h2>
+  );
+};
+
 const Navbartext: React.FC<AnchorProps> = ({ text, href }) => {
   return (
     <a href={href} className={"navbar-text"}>
@@ -71,4 +79,11 @@ const HighlightText: React.FC<HighlightTextProps> = ({
 };
 // End HighlightText component
 
-export { SectionText, Navbartext, HeaderText, HighlightText, ParagraphText };
+export {
+  SectionText,
+  SubsectionText,
+  Navbartext,
+  HeaderText,
+  HighlightText,
+  ParagraphText,
+};
