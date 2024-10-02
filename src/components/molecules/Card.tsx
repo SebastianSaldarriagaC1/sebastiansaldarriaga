@@ -3,6 +3,7 @@ import { ProjectImage } from "../atoms/Image";
 
 import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
+import { ParagraphText } from "../atoms/Text";
 
 interface ProjectCardProps {
   title: string;
@@ -23,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div className="p-10 m-[1px] card-border">
       <div className="sm:flex items-center">
         <ProjectImage src={image} alt={title} />
-        <p className="sm:ml-10">{description}</p>
+        <ParagraphText text={description} extraClass="sm:ml-10" />
       </div>
       <div className="sm:flex w-full mt-10 justify-evenly">
         {websiteLink && (
@@ -34,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             className="flex"
           >
             <CgWebsite className="mr-2 text-xl sm:text-3xl" />
-            <p className="project-external-link-text text-xl  sm:text-3xl">
+            <p className="project-external-link-text text-xl  sm:text-2xl">
               Visit Webpage
             </p>
           </a>
@@ -47,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             className="flex"
           >
             <FaGithub className="mr-2 text-xl sm:text-3xl" />
-            <p className="project-external-link-text text-xl sm:text-3xl">
+            <p className="project-external-link-text text-xl sm:text-2xl">
               Visit Repository
             </p>
           </a>

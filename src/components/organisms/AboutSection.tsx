@@ -1,5 +1,5 @@
 import React from "react";
-import { HighlightText } from "../atoms/Text";
+import { HighlightText, ParagraphText } from "../atoms/Text";
 import { CircleImage } from "../atoms/Image";
 
 const AboutSection: React.FC = () => {
@@ -18,16 +18,16 @@ const AboutSection: React.FC = () => {
             />
           </div>
         </div>
-        <div className="w-10/12 mx-auto items-center text-base sm:text-2xl">
-          <p>
-            I&apos;m a Systems Engineering student at the University of
+        <div className="w-10/12 mx-auto items-center text-base sm:text-xl">
+          <ParagraphText
+            text="I'm a Systems Engineering student at the University of
             Antioquia, with a strong passion for backend programming, and
-            I&apos;m in the process of becoming a Fullstack Developer. I have
+            I'm in the process of becoming a Fullstack Developer. I have
             experience working with languages such as Java,
             JavaScript/TypeScript, and Kotlin, and my love for technology
             constantly drives my enthusiasm to learn and grow in this
-            ever-evolving field.
-          </p>
+            ever-evolving field."
+          />
         </div>
       </div>
     </div>

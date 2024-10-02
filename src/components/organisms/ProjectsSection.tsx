@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { ProjectCard } from "../molecules/Card";
 import { SectionText } from "../atoms/Text";
+import { RoundedButton } from "../atoms/Button";
 
 const projectList = [
   {
@@ -71,41 +72,53 @@ const ProjectsSection: React.FC = () => {
     setNav2(sliderRef2.current);
   }, []);
   return (
-    <div className="slider-container mx-auto w-11/12 sm:w-10/12">
-      <SectionText text="Projects" />
-      <Slider
-        asNavFor={nav2 ?? undefined}
-        ref={(slider) => {
-          if (slider) sliderRef1.current = slider;
-        }}
-        {...upperSliderSettings}
-        className="my-10 h-10"
-      >
-        {projectList.map((project, index) => (
-          <div key={index}>
-            <h3 className="text-center project-text">{project.title}</h3>
-          </div>
-        ))}
-      </Slider>
-      <Slider
-        asNavFor={nav1 ?? undefined}
-        ref={(slider) => {
-          if (slider) sliderRef2.current = slider;
-        }}
-        className="w-10/12 mx-auto items-center text-base sm:text-2xl"
-        {...lowerSliderSettings}
-      >
-        {projectList.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            githubLink={project.githubLink}
-            websiteLink={project.websiteLink}
-          />
-        ))}
-      </Slider>
+    <div className="mx-auto w-11/12 sm:w-10/12">
+      <div className="slider-container">
+        <SectionText id="projects" text="Projects" />
+        <Slider
+          asNavFor={nav2 ?? undefined}
+          ref={(slider) => {
+            if (slider) sliderRef1.current = slider;
+          }}
+          {...upperSliderSettings}
+          className="my-10 h-10"
+        >
+          {projectList.map((project, index) => (
+            <div key={index}>
+              <h3 className="text-center project-text">{project.title}</h3>
+            </div>
+          ))}
+        </Slider>
+        <Slider
+          asNavFor={nav1 ?? undefined}
+          ref={(slider) => {
+            if (slider) sliderRef2.current = slider;
+          }}
+          className="w-10/12 mx-auto items-center text-base sm:text-2xl"
+          {...lowerSliderSettings}
+        >
+          {projectList.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              githubLink={project.githubLink}
+              websiteLink={project.websiteLink}
+            />
+          ))}
+        </Slider>
+      </div>
+      {/* Centered button to see more projects*/}
+      <div className="flex justify-center my-10">
+        <RoundedButton
+          text="See more projects"
+          onClick={() =>
+            window.open("https://github.com/SebastianSaldarriagaC1", "_blank")
+          }
+          extraClass="mx-auto"
+        />
+      </div>
     </div>
   );
 };

@@ -11,8 +11,12 @@ interface AnchorProps {
   href: string;
 }
 
-const SectionText: React.FC<TextProps> = ({ text, extraClass }) => {
-  return <h1 className={"section-text " + extraClass}>{text}</h1>;
+const SectionText: React.FC<TextProps> = ({ id, text, extraClass }) => {
+  return (
+    <h1 id={id} className={"section-text " + extraClass}>
+      {text}
+    </h1>
+  );
 };
 
 const Navbartext: React.FC<AnchorProps> = ({ text, href }) => {
@@ -26,6 +30,14 @@ const Navbartext: React.FC<AnchorProps> = ({ text, href }) => {
 const HeaderText: React.FC<TextProps> = ({ id, text, extraClass }) => {
   return (
     <p id={id} className={"header-text " + extraClass}>
+      {text}
+    </p>
+  );
+};
+
+const ParagraphText: React.FC<TextProps> = ({ id, text, extraClass }) => {
+  return (
+    <p id={id} className={"paragraph-text " + extraClass}>
       {text}
     </p>
   );
@@ -59,4 +71,4 @@ const HighlightText: React.FC<HighlightTextProps> = ({
 };
 // End HighlightText component
 
-export { SectionText, Navbartext, HeaderText, HighlightText };
+export { SectionText, Navbartext, HeaderText, HighlightText, ParagraphText };

@@ -65,6 +65,11 @@ body {
   font-family: "Montserrat", "Arial", "Sans Serif";
   text-decoration: underline;
 }
+.rounded-button {
+  background-color: var(--secondary-accent-color);
+  cursor: pointer;
+  font-family: "Montserrat", "Arial", "Sans Serif";
+}
 
 p {
   color: var(--secondary-text-color);
