@@ -23,6 +23,7 @@ const PortfolioTemplate: React.FC = () => {
       <ProjectsSection />
       <hr className="mx-auto w-11/12 my-10" />
       <SkillsSection />
+      <hr className="mx-auto w-11/12 my-10" />
     </div>
   );
 };
