@@ -71,13 +71,21 @@ body {
   font-family: "Montserrat", "Arial", "Sans Serif";
 }
 
-p {
+.paragraph-text {
   color: var(--secondary-text-color);
   font-family: "Source Sans Pro", "Arial", "Sans Serif";
 }
 
 hr {
   border: 1px solid var(--division-color);
+}
+
+.card-hover:hover {
+  box-shadow: 0 0 10px var(--shadows-color);
+}
+
+.active-category {
+  color: var(--primary-accent-color);
 }
 
 @media (prefers-color-scheme: dark) {

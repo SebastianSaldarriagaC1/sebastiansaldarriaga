@@ -4,6 +4,7 @@ import { ProjectImage } from "../atoms/Image";
 import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { ParagraphText } from "../atoms/Text";
+import { IconType } from "react-icons";
 
 interface ProjectCardProps {
   title: string;
@@ -21,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   websiteLink,
 }) => {
   return (
-    <div className="p-10 m-[1px] card-border">
+    <div className="p-10 m-[1px] card-border card-hover transition-shadow">
       <div className="sm:flex items-center">
         <ProjectImage src={image} alt={title} />
         <ParagraphText text={description} extraClass="sm:ml-10" />
@@ -58,4 +59,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   );
 };
 
-export { ProjectCard };
+interface SkillCardProps {
+  name: string;
+  icon: IconType;
+}
+
+const SkillCard: React.FC<SkillCardProps> = ({ name, icon }) => {
+  return (
+    <div className="flex flex-col items-center p-3 card-border card-hover transition-shadow">
+      {icon({ size: 24 })}
+      <ParagraphText text={name} />
+    </div>
+  );
+};
+
+export { ProjectCard, SkillCard };

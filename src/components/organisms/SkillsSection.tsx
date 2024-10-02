@@ -15,6 +15,7 @@ import {
   SiPostgresql,
   SiReact,
 } from "react-icons/si";
+import { SkillCard } from "../molecules/Card";
 
 interface Skill {
   name: string;
@@ -25,7 +26,7 @@ interface Skill {
 const skillsList: Skill[] = [
   { name: "Java", icon: FaJava, category: ["Backend"] },
   {
-    name: "JavaScript/TypeScript",
+    name: "JavaScript",
     icon: SiJavascript,
     category: ["Frontend", "Backend"],
   },
@@ -38,6 +39,7 @@ const skillsList: Skill[] = [
   { name: "Docker", icon: SiDocker, category: ["DevOps"] },
   { name: "Git", icon: SiGit, category: ["DevOps"] },
   { name: "Linux", icon: SiLinux, category: ["DevOps"] },
+  { name: "HTML", icon: SiJavascript, category: ["Tu mama"] },
 ];
 
 const categories = Array.from(
@@ -65,7 +67,7 @@ const SkillsSection: React.FC = () => {
         );
 
   return (
-    <div id="skills" className="mx-auto w-11/12 sm:w-10/12">
+    <div id="skills" className="mx-auto w-11/12 sm:w-10/12 sm:h-[400px]">
       <SectionText text="Skills & Tools" />
       <div className="flex flex-col sm:flex-row w-10/12 mx-auto items-start sm:items-center text-base sm:text-xl">
         <div className="flex flex-col w-full sm:w-1/2 h-auto">
@@ -74,26 +76,20 @@ const SkillsSection: React.FC = () => {
               key={index}
               className={`p-2 text-center mb-2 ${
                 selectedCategories.includes(category)
-                  ? "bg-blue-500 text-white"
-                  : ""
-              } hover:bg-blue-400 transition-colors`}
+                  ? "active-category"
+                  : "unactive-category"
+              }  transition-colors`}
               onClick={() => toggleCategory(category)}
             >
               {category}
             </button>
           ))}
         </div>
-        <hr className="hidden sm:block rotate-90 w-20 my-10" />
+        <div className="border-gray-50 h-1/2 w-1"></div>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 w-full sm:w-1/2 mt-10 sm:mt-0">
           {filteredSkills.map((skill, index) => {
             return (
-              <div
-                key={index}
-                className="flex items-center space-x-3 p-3 border rounded shadow-sm hover:shadow-lg transition-shadow"
-              >
-                <skill.icon size={24} />
-                <span>{skill.name}</span>
-              </div>
+              <SkillCard key={index} name={skill.name} icon={skill.icon} />
             );
           })}
         </div>

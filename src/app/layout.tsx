@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Sebastian Saldarriaga",
+  title: "Sebastian Saldarriaga - Portfolio",
   description:
     "Portfolio of Sebastian Saldarriaga, a software engineer based in Colombia.",
 };
