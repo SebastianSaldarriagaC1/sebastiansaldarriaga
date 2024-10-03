@@ -35,12 +35,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={githubLink}
             target="_blank"
             rel="noreferrer"
-            className="flex"
+            className="flex external-link"
           >
             <CgWebsite className="mr-2 text-xl sm:text-3xl" />
-            <p className="project-external-link-text text-xl  sm:text-2xl">
-              Visit Webpage
-            </p>
+            <p className="text-xl  sm:text-2xl underline">Visit Webpage</p>
           </a>
         )}
         {githubLink && (
@@ -48,12 +46,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             href={githubLink}
             target="_blank"
             rel="noreferrer"
-            className="flex"
+            className="flex external-link"
           >
             <FaGithub className="mr-2 text-xl sm:text-3xl" />
-            <p className="project-external-link-text text-xl sm:text-2xl">
-              Visit Repository
-            </p>
+            <p className="text-xl sm:text-2xl underline">Visit Repository</p>
           </a>
         )}
       </div>
@@ -109,9 +105,12 @@ const EducationCard: React.FC<EducationCardProps> = ({
               href={certificateLink}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center"
+              className="flex items-center external-link"
             >
-              <ParagraphText text={degree} extraClass="underline" />
+              <ParagraphText
+                text={degree}
+                extraClass="underline external-link"
+              />
               <CiLink className="text-xl sm:text-2xl ml-1" />
             </a>
           ) : (

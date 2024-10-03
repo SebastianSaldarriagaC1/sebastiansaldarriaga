@@ -67,16 +67,22 @@ body {
   border: 1px solid var(--main-text-color);
 }
 
-.project-external-link-text {
+.external-link {
   color: var(--main-text-color);
-  font-family: "Montserrat", "Arial", "Sans Serif";
-  text-decoration: underline;
+}
+
+.external-link:hover {
+  color: var(--secondary-accent-hover-color);
 }
 
 .rounded-button {
   background-color: var(--secondary-accent-color);
   cursor: pointer;
   font-family: "Montserrat", "Arial", "Sans Serif";
+}
+
+.rounded-button:hover {
+  background-color: var(--secondary-accent-hover-color);
 }
 
 .paragraph-text {
@@ -105,7 +111,11 @@ hr {
 }
 
 .unactive-category:hover {
-  color: var(--primary-accent-color);
+  color: var(--primary-accent-hover-color);
+}
+
+.active-category:hover {
+  color: var(--primary-accent-hover-color);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -120,7 +120,7 @@ const ContactSection: React.FC = () => {
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-2xl highlight-text transition-colors flex flex-col items-center"
+              className="text-2xl external-link transition-colors flex flex-col items-center"
             >
               {social.icon({ size: 30 })}
               <span className="sr-only md:not-sr-only text-[16px]">
