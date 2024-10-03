@@ -5,6 +5,7 @@ import ProjectsSection from "../organisms/ProjectsSection";
 import SkillsSection from "../organisms/SkillsSection";
 import EducationSection from "../organisms/EducationSection";
 import ContactSection from "../organisms/ContactSection";
+import PortfolioFooter from "../organisms/Footer";
 
 const PortfolioTemplate: React.FC = () => {
   return (
@@ -29,6 +30,8 @@ const PortfolioTemplate: React.FC = () => {
       <EducationSection />
       <hr className="mx-auto w-11/12 my-10" />
       <ContactSection />
+      <hr className="mx-auto w-11/12 my-10" />
+      <PortfolioFooter />
     </div>
   );
 };
