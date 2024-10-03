@@ -20,22 +20,22 @@ interface Social {
 const socialLinks = [
   {
     name: "LinkedIn",
-    url: "b",
+    url: "https://www.linkedin.com/in/sebastian-saldarriagac/",
     icon: FaLinkedin,
   },
   {
     name: "Instagram",
-    url: "d",
+    url: "https://www.instagram.com/sebas.s.cardona/",
     icon: FaInstagram,
   },
   {
     name: "GitHub",
-    url: "c",
+    url: "https://github.com/SebastianSaldarriagaC1",
     icon: FaGithub,
   },
   {
     name: "WhatsApp",
-    url: "e",
+    url: "https://wa.me/573107147030",
     icon: FaWhatsapp,
   },
 ];
