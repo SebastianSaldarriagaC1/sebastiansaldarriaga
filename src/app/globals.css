@@ -104,6 +104,10 @@ hr {
   font-size: 24px;
 }
 
+.unactive-category:hover {
+  color: var(--primary-accent-color);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --main-background-color: #121212;
