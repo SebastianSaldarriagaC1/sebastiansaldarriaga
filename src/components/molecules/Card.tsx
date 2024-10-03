@@ -96,7 +96,7 @@ const EducationCard: React.FC<EducationCardProps> = ({
           alt="Institution logo"
           width={105}
           height={140}
-          className="sm:mr-10"
+          className="sm:mr-10  object-contain"
         />
         <div className="flex flex-col justify-center my-6">
           <p>{institution}</p>

@@ -4,47 +4,41 @@ import { SectionText, SubsectionText } from "../atoms/Text";
 
 const formalEducationList = [
   {
-    institution: "Universidad de Antioquia",
-    institutionLogo: "/logo.png",
+    institution: "University of Antioquia",
+    institutionLogo: "/education/udea-logo.png",
     degree: "Systems Engineering",
     city: "Medellín, Colombia",
     completionDate: "Currently studying",
-    certificateLink: "a",
+    certificateLink: "",
   },
   {
-    institution: "Universidad de Antioquia",
-    institutionLogo: "/logo.png",
+    institution: "SENA",
+    institutionLogo: "/education/sena-logo.png",
     degree: "Systems Engineering",
     city: "Medellín, Colombia",
-    completionDate: "Currently studying",
+    completionDate: "Nov, 2018",
     certificateLink: "",
   },
 ];
 
 const coursesAndCertificationsList = [
   {
-    institution: "Universidad de Antioquia",
-    institutionLogo: "/logo.png",
-    degree: "Systems Engineering",
-    city: "Medellín, Colombia",
-    completionDate: "Currently studying",
-    certificateLink: "",
+    institution: "Google Cloud",
+    institutionLogo: "/education/gcloud-certificate-logo.png",
+    degree: "Google Cloud Computing Foundations",
+    city: "Google Cloud Skills Boost",
+    completionDate: "Jun, 2024",
+    certificateLink:
+      "https://www.credly.com/badges/dd5a5293-2b88-4449-93b3-0a17fa3c9771/public_url",
   },
   {
-    institution: "Universidad de Antioquia",
-    institutionLogo: "/logo.png",
-    degree: "Systems Engineering",
-    city: "Medellín, Colombia",
-    completionDate: "Currently studying",
-    certificateLink: "",
-  },
-  {
-    institution: "Universidad de Antioquia",
-    institutionLogo: "/logo.png",
-    degree: "Systems Engineering",
-    city: "Medellín, Colombia",
-    completionDate: "Currently studying",
-    certificateLink: "",
+    institution: "GitHub",
+    institutionLogo: "/education/github-foundations-logo.png",
+    degree: "GitHub Foundations",
+    city: "",
+    completionDate: "Jun, 2024",
+    certificateLink:
+      "https://www.credly.com/badges/99070e3d-7193-49fb-ab33-f35044e132c4/public_url",
   },
 ];
 
