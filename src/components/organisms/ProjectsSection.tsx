@@ -10,32 +10,35 @@ import { RoundedButton } from "../atoms/Button";
 
 const projectList = [
   {
-    title: "Predictive Fifa Model",
-    description: "Description 1",
-    image: "/predictive-model-fifa19.jpeg",
-    githubLink: "https://github.com",
-    websiteLink: "https://website.com",
-  },
-  {
-    title: "Scrum Progress",
-    description: "Description 2",
-    image: "/scrum-progress.png",
-    githubLink: "https://github.com",
-    websiteLink: "https://website.com",
-  },
-  {
-    title: "Sitas Reservas",
-    description: "Description 3",
-    image: "/sitas-reservas-a.png",
-    githubLink: "https://github.com",
-    websiteLink: "https://website.com",
-  },
-  {
     title: "SSMU Backend",
-    description: "Description 4",
-    image: "/ssmu-backend.png",
-    githubLink: "https://github.com",
-    websiteLink: "https://website.com",
+    description:
+      "Backend for the module to request rides in the SSMU application, similar to Uber. Responsible for database management and building APIs.",
+    image: "/projects/ssmu-backend.png",
+    githubLink:
+      "https://github.com/SebastianSaldarriagaC1/realizar-solicitudes-back",
+  },
+  {
+    title: "IoT Monitoring",
+    description:
+      "An IoT solution using ESP32 to collect temperature and humidity data from a KY-015 sensor, sending the data to Firebase for real-time storage. Includes a Firebase-based frontend for monitoring.",
+    image: "/projects/iot-temperature.png",
+    githubLink:
+      "https://github.com/SebastianSaldarriagaC1/esp32-firebase-webapp",
+  },
+  {
+    title: "Predictive Fifa Model",
+    description:
+      "Predictive model built in Python to predict the value of soccer players in FIFA19 based on their characteristics. Responsible for data preprocessing and testing different predictive models with SKlearn to determine the most efficient and complex model.",
+    image: "/projects/predictive-model-fifa19.jpeg",
+    githubLink:
+      "https://github.com/SebastianSaldarriagaC1/proyecto-final-modelos",
+  },
+  {
+    title: "Sprint Pulse (WIP)",
+    description:
+      "Scrum-focused project management platform with gamified features. Responsible for the frontend and backend development with Angular and Spring Boot.",
+    image: "/projects/sprint-pulse.png",
+    githubLink: "https://github.com/SebastianSaldarriagaC1/sprint-pulse",
   },
 ];
 
