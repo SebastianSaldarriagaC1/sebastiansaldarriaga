@@ -25,9 +25,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="p-10 m-[1px] card-border card-hover transition-shadow">
-      <div className="sm:flex items-center">
-        <ProjectImage src={image} alt={title} />
-        <ParagraphText text={description} extraClass="sm:ml-10" />
+      <div className="md:flex items-center">
+        <div className="md:w-1/2">
+          <ProjectImage src={image} alt={title} />
+        </div>
+        <div className="md:w-1/2">
+          <ParagraphText text={description} extraClass="sm:ml-10" />
+        </div>
       </div>
       <div className="sm:flex w-full mt-10 justify-evenly">
         {websiteLink && (
