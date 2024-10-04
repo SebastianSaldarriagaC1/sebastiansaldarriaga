@@ -24,6 +24,7 @@ const projectList = [
     image: "/projects/iot-temperature.png",
     githubLink:
       "https://github.com/SebastianSaldarriagaC1/esp32-firebase-webapp",
+    websiteLink: "https://esp32-webapp-27b6f.web.app/",
   },
   {
     title: "Predictive Fifa Model",
