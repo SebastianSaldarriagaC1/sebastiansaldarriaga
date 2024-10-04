@@ -3,17 +3,31 @@ import React, { useState } from "react";
 
 import { SectionText } from "../atoms/Text";
 import { IconType } from "react-icons";
-import { FaJava, FaNode } from "react-icons/fa";
 import {
-  SiDocker,
+  FaAndroid,
+  FaCss3Alt,
+  FaGitAlt,
+  FaGithub,
+  FaHtml5,
+  FaJava,
+  FaJs,
+  FaJsSquare,
+  FaLinux,
+  FaReact,
+} from "react-icons/fa";
+import {
+  SiAzuredevops,
   SiExpress,
-  SiGit,
-  SiJavascript,
+  SiGitlab,
+  SiGooglecloud,
+  SiJetpackcompose,
   SiKotlin,
-  SiLinux,
-  SiMongodb,
   SiPostgresql,
-  SiReact,
+  SiPostman,
+  SiScrumalliance,
+  SiSonarcloud,
+  SiSpringboot,
+  SiVercel,
 } from "react-icons/si";
 import { SkillCard } from "../molecules/Card";
 
@@ -24,21 +38,36 @@ interface Skill {
 }
 
 const skillsList: Skill[] = [
-  { name: "Java", icon: FaJava, category: ["Backend"] },
+  { name: "Java", icon: FaJava, category: ["Backend", "Programming Language"] },
+  { name: "HTML", icon: FaHtml5, category: ["Frontend", "Web Development"] },
+  { name: "CSS", icon: FaCss3Alt, category: ["Frontend", "Web Development"] },
   {
     name: "JavaScript",
-    icon: SiJavascript,
-    category: ["Frontend", "Backend"],
+    icon: FaJs,
+    category: ["Frontend", "Web Development", "Programming Language"],
   },
-  { name: "Kotlin", icon: SiKotlin, category: ["Backend"] },
-  { name: "React", icon: SiReact, category: ["Frontend"] },
-  { name: "Node.js", icon: FaNode, category: ["Backend"] },
-  { name: "Express", icon: SiExpress, category: ["Backend"] },
+  { name: "React", icon: FaReact, category: ["Frontend", "Web Development"] },
+  {
+    name: "Spring Boot",
+    icon: SiSpringboot,
+    category: ["Backend", "Web Development"],
+  },
   { name: "PostgreSQL", icon: SiPostgresql, category: ["Database"] },
-  { name: "MongoDB", icon: SiMongodb, category: ["Database"] },
-  { name: "Docker", icon: SiDocker, category: ["DevOps"] },
-  { name: "Git", icon: SiGit, category: ["DevOps"] },
-  { name: "Linux", icon: SiLinux, category: ["DevOps"] },
+  {
+    name: "Kotlin",
+    icon: SiKotlin,
+    category: ["Mobile Development", "Programming Language"],
+  },
+  { name: "SonarCloud", icon: SiSonarcloud, category: ["Tools", "DevOps"] },
+  { name: "Postman", icon: SiPostman, category: ["Tools", "DevOps"] },
+  { name: "Git", icon: FaGitAlt, category: ["Version Control", "Tools"] },
+  { name: "GitHub", icon: FaGithub, category: ["Version Control", "Tools"] },
+  { name: "GitLab", icon: SiGitlab, category: ["Version Control", "Tools"] },
+  { name: "GCP", icon: SiGooglecloud, category: ["Cloud", "DevOps"] },
+  { name: "Vercel", icon: SiVercel, category: ["Cloud", "DevOps"] },
+  { name: "Linux", icon: FaLinux, category: ["Tools", "DevOps"] },
+  { name: "Scrum", icon: SiScrumalliance, category: ["DevOps", "Tools"] },
+  { name: "Azure DevOps", icon: SiAzuredevops, category: ["Cloud", "DevOps"] },
 ];
 
 const categories = Array.from(
