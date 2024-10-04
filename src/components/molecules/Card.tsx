@@ -70,7 +70,10 @@ const SkillCard: React.FC<SkillCardProps> = ({ name, icon }) => {
   return (
     <div className="flex flex-col items-center p-3 card-border card-hover transition-shadow">
       {icon({ size: 24 })}
-      <ParagraphText text={name} />
+      <ParagraphText
+        text={name}
+        extraClass="text-center my-auto justify-center"
+      />
     </div>
   );
 };
