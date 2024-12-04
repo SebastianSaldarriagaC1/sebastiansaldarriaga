@@ -14,7 +14,7 @@ const formalEducationList = [
   {
     institution: "SENA",
     institutionLogo: "/education/sena-logo.png",
-    degree: "Systems Engineering",
+    degree: "Systems Technician",
     city: "San Roque, Colombia",
     completionDate: "Nov, 2018",
     certificateLink: "",
